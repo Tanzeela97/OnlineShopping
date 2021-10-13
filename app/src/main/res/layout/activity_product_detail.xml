@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+
+        tools:context=".productdetail.ProductDetail">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="67dp"
+            app:layout_constraintGuide_percent="0.07" />
+
+        <ImageView
+            android:id="@+id/back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_back" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="67dp"
+            app:layout_constraintGuide_percent="0.45" />
+
+        <ImageView
+            android:id="@+id/forward_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_more" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="450dp"
+            android:background="@drawable/detail_page"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="67dp"
+                app:layout_constraintGuide_percent="0.55" />
+
+            <TextView
+                android:id="@+id/body_txt"
+                android:layout_width="55dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="116dp"
+                android:background="@drawable/cart_bg"
+                android:fontFamily="@font/rubik_medium"
+                android:gravity="center"
+                android:text="Face"
+                android:textColor="@android:color/background_dark"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/lotion_txt"
+                android:layout_width="60dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="28dp"
+                android:background="@drawable/cart_bg"
+                android:fontFamily="@font/rubik_medium"
+                android:gravity="center"
+                android:text="Wash"
+                android:textColor="@android:color/background_dark"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/body_txt"
+                app:layout_constraintStart_toEndOf="@+id/body_txt"
+                app:layout_constraintTop_toTopOf="@+id/body_txt"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/rubik_bold"
+                android:text="Soothing Facial form Facewash"
+                android:textColor="@android:color/background_dark"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/price_txt"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/body_txt"
+                app:layout_constraintTop_toBottomOf="@+id/body_txt" />
+
+            <TextView
+                android:id="@+id/price_txt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:fontFamily="@font/rubik_bold"
+                android:text="$ 15.00"
+                android:textColor="#42995C"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView11"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView11" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="67dp"
+                app:layout_constraintGuide_percent="0.75" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="356dp"
+                android:layout_height="73dp"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/rubik"
+                android:lineSpacingExtra="2dp"
+                android:text="@string/facewash1_des"
+                android:textColor="@android:color/background_dark"
+                app:layout_constraintEnd_toEndOf="@+id/price_txt"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView11"
+                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="67dp"
+                app:layout_constraintGuide_percent="1.0" />
+
+            <ImageView
+                android:id="@+id/minus_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView13"
+                app:layout_constraintTop_toTopOf="@+id/cart_btn"
+                app:srcCompat="@drawable/ic_minus" />
+
+            <TextView
+                android:id="@+id/add_category_txt"
+                android:layout_width="50dp"
+                android:layout_height="53dp"
+                android:fontFamily="@font/rubik_medium"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@android:color/background_dark"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/minus_img"
+                app:layout_constraintStart_toEndOf="@+id/minus_img"
+                app:layout_constraintTop_toTopOf="@+id/minus_img"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/plus_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/add_category_txt"
+                app:layout_constraintStart_toEndOf="@+id/add_category_txt"
+                app:layout_constraintTop_toTopOf="@+id/add_category_txt"
+                app:srcCompat="@drawable/ic_plus" />
+
+            <Button
+                android:id="@+id/cart_btn"
+                android:layout_width="185dp"
+                android:layout_height="75dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/detail_page_cart_bg"
+                android:drawableRight="@drawable/ic_forward_back"
+                android:fontFamily="@font/rubik_medium"
+                android:padding="16dp"
+                android:paddingRight="16dp"
+                android:text="Add to Cart"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/product_detailImage"
+            android:layout_width="223dp"
+            android:layout_height="305dp"
+            android:layout_marginTop="52dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:transitionName="image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.446"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/facewash1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

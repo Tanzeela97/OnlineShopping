@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">OnlineShopingApp</string>
+    <string name="facewash1_des">Soothing  Face Wash leaves your skin feeling calm and soothed on the daily basis. This gentle facial cleanser is fragrance-free, removes dirt, oil and impurities.</string>
+
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+
+    <!--for facebook login-->
+
+    <!--facebook login ends-->
+
+    <!--error messages-->
+</resources>
